@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+   line-height: 1.4;
+   font-weight: 300;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button{
+    padding: 10px;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+button:hover{
+    opacity: 0.8;
+    transition: 0.2 ease-in-out;
+}
+/* vav bar*/
+nav{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+    position: sticky;
+    top: 0;
+    margin-bottom: 32px;
+    background-color: aliceblue;
+    padding: 10px;
+}
+.navi{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contain{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.bar{
+    font-size: 32px;
+}
+/* hero section*/
+.hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+.tag{
+    background-color: #149f39;
+    padding: 5px 10px;
+    color: #f6f4f4;
+    align-self: flex-start;
+}
+.hero_content h1{
+    font-size: 72px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+.btn{
+    background: #ffc066;
+    align-self: flex-start;
+} 
+.features{
+   margin-top: 100px;
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   margin-bottom: 50px;
+
+}
+.feature{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+}
+.feature:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+.divider{
+    border: 1px solid#ccc;
+    margin: 20px 0;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px 0;
+    align-items: center;
+
+}
+.menu .tag{
+    align-self: center;
+}
+.grid{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "I1 I1 I2 I3" 
+    "I1 I1 I2 I7"
+    "I4 I5 I6 I7";
+
+}
+.image0{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+
+}
+.image0:hover{
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.05);
+}
+.item1{
+    grid-area: I1;
+}
+.item2{
+    grid-area: I2;
+}
+.item3{
+    grid-area: I3;
+}
+.item4{
+    grid-area: I4;
+}
+.item5{
+    grid-area: I5;
+}
+.item6{
+    grid-area: I6;
+}
+.item7{
+    grid-area: I7;
+}
+
+
+/* footer*/
+footer{
+    background: #fff0db;
+
+}
+.footer_{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:786px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero_image{
+        width: 90%;
+    }
+}
